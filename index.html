@@ -1,0 +1,1000 @@
+<!doctype html>
+
+<!-- Include a default theme value to start with the theme of your preference, dark|light are accepted -->
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <title>
+    Recruit Connect – ATS Integration With Job Boards | Automate Your Job Posting
+  </title>
+  <meta charset="utf-8"> <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+
+
+  <!-- SEO -->
+
+ 
+  <meta name="description" content="With Recruit Connect, you can seamlessly connect your ATS to job boards like Indeed and Monsterboard. Save time, increase applications, and optimize campaigns. Schedule a demo!">
+  <meta name="keywords" content="Recruit Connect ATS systems">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="5studios">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+
+  <!-- Page loading styles. Should be included inline to avoid loading it externally -->
+  <style>
+    @keyframes spinner {
+      to {
+        transform: rotate(1turn)
+      }
+    }
+
+    .page-loading {
+      background-color: #fff;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      transition: all .4s ease-in-out .2s;
+      visibility: hidden;
+      width: 100%;
+      z-index: 99999
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .page-loading.active>.page-loading-inner {
+      opacity: 1
+    }
+
+    .page-loading-inner {
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: opacity .2s ease-in-out;
+      width: 100%
+    }
+
+    .page-loading-inner>span {
+      color: #9397ad;
+      display: block;
+      font-size: 1rem;
+      font-weight: 400
+    }
+
+    .page-spinner {
+      animation: spinner .75s linear infinite;
+      border: .15em solid #b4b7c9;
+      border-radius: 50%;
+      border-right-color: transparent;
+      display: inline-block;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      width: 2.75rem
+    }
+
+    [data-bs-theme=dark] .page-loading {
+      background-color: #0b0f19
+    }
+
+    [data-bs-theme=dark] .page-loading-inner>span {
+      color: #fff;
+      opacity: .6
+    }
+
+    [data-bs-theme=dark] .page-spinner {
+      border-color: hsla(0, 0%, 100%, .4) transparent hsla(0, 0%, 100%, .4) hsla(0, 0%, 100%, .4)
+    }
+  </style>
+  <link rel="icon" href="favicon.ico">
+  <title>DashCore - Powerful Responsive SaaS, Startup &amp; Technology HTML Template</title>
+
+  <!--
+    Compiled css styles.
+    We created and included a webpack configuration file you can compile the css.
+    Please refer to the docs in order to learn how to compile and replace this file.
+  -->
+  <link rel="stylesheet" href="css/dashcore.41588051c3b03e83ed26.css">
+</head>
+
+<body> <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Page loading -->
+  <!-- <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div>
+      <span>Loading...</span>
+    </div>
+  </div> -->
+
+  <!-- Page Navbar -->
+  <nav class="st-nav navbar navbar-expand-lg fixed-top dark-link" id="main-nav">
+    <div class="container">
+      <ul class="st-nav-menu nav navbar-nav">
+        <li class="st-nav-section nav-item" style="padding-left: 2.5rem;">
+          <a href="./" class="link-logo navbar-brand nav-link">
+            <img src="img/recruit.svg" alt="" class="logo">
+          </a>
+        </li>
+
+        <!-- Primary navigation elements -->
+        <li class="st-nav-section st-nav-primary nav-item">
+          <a href="#home" class="st-root-link item-products nav-link">Home</a>
+          <a href="#why-us" class="st-root-link item-products nav-link">Why Us</a>
+          <a href="#job-board" class="st-root-link item-company nav-link">Job Boards</a>
+          <a href="#ats-systems" class="st-root-link item-products nav-link">ATS Systems</a>
+          <a href="#how-it-works" class="st-root-link item-products nav-link">How It Works</a>
+          <a href="#pricing" class="st-root-link item-products nav-link">Pricing & Packages</a>
+     
+
+          
+
+          
+
+          
+        </li>
+
+        <!-- Secondary navigation elements -->
+        <li class="st-nav-section st-nav-secondary nav-item align-items-center">
+
+          <!-- Language switcher -->
+          <a href=""><img src="img/en.png" alt="English" style="border: none;height: 30px;margin: 7px 10px;"></a>
+
+          <!-- Navigation buttons -->
+          <a class="btn btn-primary shadow-primary" href="#contact">
+           
+            <span class="d-md-none d-lg-inline">Contact Us</span>
+          </a>
+        </li>
+
+        <!-- Mobile navigation modal -->
+        <li class="st-nav-section st-nav-mobile nav-item">
+          <button class="st-root-link navbar-toggler" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="st-popup">
+            <div class="st-popup-container bg-body-tertiary">
+              <a class="st-popup-close-button">Close</a>
+              <div class="st-dropdown-content-group">
+             
+                <a class="text-primary" href="#home">
+                  Home
+                </a>
+
+                <a class="text-primary" href="#why-us">
+                  Why Us
+                </a>
+
+                <a class="text-primary" href="#job-board">
+                  Job Boards
+                </a>
+
+                <a class="text-primary" href="#ats-systems">
+                  ATS Systems
+                </a>
+
+                <a class="text-primary" href="#how-it-works">
+                  How It Works
+                </a>
+
+                <a class="text-primary" href="#pricing">
+                  Pricing & Packages
+                </a>
+               
+              </div>
+             
+              <div class="st-dropdown-content-group border-top">
+                <a href="#contact" class="mobile-link">Contact Us <i class="fas fa-long-arrow-right ms-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="st-dropdown-root">
+      <div class="st-dropdown-bg">
+        <div class="st-alt-bg"></div>
+      </div>
+      <div class="st-dropdown-arrow"></div>      
+      <div class="st-dropdown-container">
+        <div class="st-dropdown-section" data-dropdown="pages">
+          <div class="st-dropdown-content">            
+          </div>
+        </div>    
+      </div>
+    </div>
+
+
+    
+  </nav>
+
+  <!-- Main content, everything should be placed inside this main tag but the nav and footer -->
+  <main class="position-relative overflow-hidden">
+
+  
+
+ <!-- Payment Services Heading -->
+ <header class="section header payment-services-header" id="home">
+  <div class="shapes-container">
+    <div class="static-shape shape-main cutout x2 bottom-right" data-aos="fade-down" data-aos-delay="300"></div>
+  </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        
+        <h1 class="fw-bold text-gradient text-gradient-primary fs-3 display-lg-3 mt-3" data-aos="fade-right" data-aos-delay="100">Recruit Connect The Smart Link Between Your ATS and Job Boards
+        </h1>
+        <p class="lead" data-aos="fade-right" data-aos-delay="200">Automate job postings and receive up to 4x more applicants with Easy Apply integrations.</p>
+        <div class="my-5" data-aos="fade-right" data-aos-delay="400">
+          <a href="#contact" class="btn btn-lg btn-primary mx-auto me-md-0">Request a Demo<i class="fas fa-long-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 position-relative">
+        <div class="shapes-container">
+          <div class="static-shape pattern-dots" data-aos="zoom-out-left" data-aos-delay="100"></div>
+        </div>
+        <figure class="figure-box mockup cutout x2 bottom-right">
+          <div class="screens">
+            <img src="img/bg2.png" alt="..." data-aos="fade-down">
+            <!-- <img src="img/payment-services/person.png" class="position-absolute" data-aos="fade-up" data-aos-delay="200" alt="..."> -->
+          </div>
+          <div class="promo-box card shadow-lg border-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-body p-5 text-center">
+              <figure class="icon-xxl mx-auto">
+                <img src="img/Conclusion.webp" alt="...">
+              </figure>
+              <p class="mt-4 text-muted mb-0">Smart Automation</p>
+              <hr class="my-3 mx-auto w-25">
+              <h6 class="h6 mb-0">Seamless Hiring</h6>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+ <!-- start why recruit connect -->
+ <section class="section why-us" id="why-us">
+  <div class="shapes-container">
+    <div class="background-shape background-shape-main bg-body-secondary top-0 end-50"></div>
+  </div>
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="fw-bold">Why Recruit Connect?</h2>
+     
+    </div>
+    <div class="row g-4 d-flex align-items-center">
+      <div class="col-md-5 position-relative">
+        <ul class="list-unstyled why-icon-list">
+          <li class="list-item">
+            <div class="d-flex align-items-center">
+              <div class="rounded-circle bg-info shadow-info text-white p-3 icon-xl d-flex align-items-center justify-content-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check stroke-contrast"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="flex-fill">
+                <h5 class="fw-bold mb-0">Automate job postings across multiple job boards</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="d-flex align-items-center">
+              <div class="rounded-circle bg-info shadow-success text-white p-3 icon-xl d-flex align-items-center justify-content-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check stroke-contrast"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="flex-fill">
+                <h5 class="fw-bold mb-0">Increase the number of applicants with Easy Apply integrations</h5>
+          
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="d-flex align-items-center">
+              <div class="rounded-circle bg-info shadow-primary text-white p-3 icon-xl d-flex align-items-center justify-content-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check stroke-contrast"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="flex-fill">
+                <h5 class="fw-bold mb-0">Optimize campaigns with custom data fields</h5>
+               
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="d-flex align-items-center">
+              <div class="rounded-circle bg-info shadow-warning text-white p-3 icon-xl d-flex align-items-center justify-content-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check stroke-contrast"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="flex-fill">
+                <h5 class="fw-bold mb-0">Fast job refresh (every 2 hours) thanks to premium partnerships</h5>
+           
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="d-flex align-items-center">
+              <div class="rounded-circle bg-info shadow-warning text-white p-3 icon-xl d-flex align-items-center justify-content-center me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check stroke-contrast"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="flex-fill">
+                <h5 class="fw-bold mb-0">Directly return applications into the ATS (disposition data)
+                </h5>
+           
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-7">
+        <figure data-aos="fade-left">
+          <img src="img/wrc.png" class="img-responsive" alt="">
+        </figure>
+      </div>
+    </div>
+    <div class="mt-5 text-center">
+      <a href="#contact" class="btn btn-primary">Request a Demo</a>
+     
+    </div>
+  </div>
+</section>
+<!-- end why recruit connect -->
+
+
+<!-- start Supported Job Boards -->
+<section class="section features" id="job-board">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="section-title fw-bold">Supported Job Boards
+      </h2>
+      <p class="lead">Reach More Candidates Through Top Job Boards</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/indeed.svg" alt="" class="jb-logo">
+            <p class="mb-0">Indeed (Easy Apply)</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/monsterboard.svg" alt="" class="jb-logo">
+            <p class="mb-0">Monsterboard (Easy Apply)
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/werkzoeren.svg" alt="" class="jb-logo">
+            <p class="mb-0">Werkzoeken.nl
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/nv.svg" alt="" class="jb-logo">
+            <p class="mb-0">Nationale Vacaturebank
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/trchnicus.svg" alt="" class="jb-logo">
+            <p class="mb-0">Technicus.nl
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/talent.svg" alt="" class="jb-logo">
+            <p class="mb-0">Talent.com
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/adzuna_logo.svg" alt="" class="jb-logo">
+            <p class="mb-0">Adzuna</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="" class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/stepstone.svg" alt="" class="jb-logo">
+            <p class="mb-0">Stepstone</p>
+          </div>
+        </a>
+      </div>
+
+   
+
+      <div class="col-md-4">
+        <div class="card shadow-box hover-lift border-0">
+          <div class="card-body text-center">
+            <img src="img/jb/vdab.svg" alt="" class="mb-3">
+            <p class="mb-0">VDAB
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-5 text-center">
+      <a href="#contact" class="btn btn-primary">See How Recruit Connect Can Integrate Your Job Boards</a>
+     
+    </div>
+
+    
+    
+
+  </div>
+</section>
+<!-- end Supported Job Boards -->
+
+
+
+
+<!-- start Ats sistems -->
+<section class="section bg-body-secondary" id="ats-systems">
+  <div class="container">
+    <div class="section-heading text-center">
+     
+      <h2 class="section-title fw-bold">Supported ATS Systems</h2>
+      <p class="lead">Transparency on ATS compatibility</p>
+    </div>
+
+    <div class="list-unstyled d-flex flex-wrap justify-content-around">
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-right" data-aos-delay="0" class="mt-6 aos-init">
+        <div class=" bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/otys.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-down-right" data-aos-delay="100" class="mt-4 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/carerix.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-up-right" data-aos-delay="200" class="mt-5 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/mysolution.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-up" data-aos-delay="300" class="mt-6 aos-init">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/floydhamilton.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-down-left" data-aos-delay="400" class="mt-4 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/easycruit.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-up-left" data-aos-delay="0" class="mt-5 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/helloflex.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-left" data-aos-delay="100" class="mt-6 aos-init">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/bullhorn.webp&quot;);"> </div>
+      </a>
+
+    </div>
+
+    <div class="list-unstyled d-flex flex-wrap justify-content-around">
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-right" data-aos-delay="0" class="mt-6 aos-init">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/sap.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-down-right" data-aos-delay="100" class="mt-4 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/talentsoft_2023-12-01-085957_qfrk.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-up-right" data-aos-delay="200" class="mt-5 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/connexys.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-up" data-aos-delay="300" class="mt-6 aos-init">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/seven20.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-down-left" data-aos-delay="400" class="mt-4 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/tigris.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-up-left" data-aos-delay="0" class="mt-5 aos-init aos-animate">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/recruitnow.webp&quot;);"> </div>
+      </a>
+
+      <a href="" data-aos-easing="ease-in-out-cubic" data-aos="fade-left" data-aos-delay="100" class="mt-6 aos-init">
+        <div class="bg-light bg-opacity-10 icon-xxl image-background p-2 contain rounded-circle" style="background-image: url(&quot;img/ats/buner.png&quot;);"> </div>
+      </a>
+
+    </div>
+
+    <div class="mt-5 text-center">
+      <a href="#contact" class="btn btn-primary">Want to Know if Your ATS Can Be Integrated? Get in Touch!</a>
+     
+    </div>
+
+  </div>
+</section>
+<!-- end ats sistems -->
+
+    <!-- start How it works -->
+    <section id="how-it-works" class="section">
+      <div class="shapes-container">
+        <div class="shape shape-ring" data-aos="fade-right">
+          <div></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2 class="section-title fw-bold "> How it Works? </h2>
+          <p class="lead">Step-by-step guide</p>
+        </div>
+        <div class="row gap-y text-center text-md-start">
+          <div class="col-md-3 py-4 px-4 text-center position-relative">
+            
+           
+            <div class="hiw">
+              1
+            </div>
+            <h5 class="fw-bold">Connect Your ATS</h5>
+            <p>Easily link your existing ATS to Recruit Connect
+            </p>
+          </div>
+          <div class="col-md-3 py-4 text-center position-relative">
+            <div class="hiw">
+              2
+            </div>
+            <h5 class="fw-bold">Select Your Job Board</h5>
+            <p>Choose which platforms to publish on</p>
+          </div>
+
+          <div class="col-md-3 py-4 text-center position-relative">
+            <div class="hiw">
+              3
+            </div>
+            <h5 class="fw-bold">Publish & Optimize</h5>
+            <p>Let jobs go live automatically and enhance them with custom data</p>
+          </div>
+
+          <div class="col-md-3 py-4 text-center position-relative">
+            <div class="hiw">
+              4
+            </div>
+            <h5 class="fw-bold">Receive More Applications</h5>
+            <p>Applications are directly sent back to your ATS</p>
+          </div>
+
+
+        </div>
+
+        <div class="mt-5 text-center">
+          <a href="#contact" class="btn btn-primary">Request a demo</a>
+        </div>
+        
+
+      </div>
+    </section>
+     <!-- end How it works -->
+
+
+     <!-- start pricing -->
+
+  
+      
+     <section class="section bg-body-secondary" id="pricing">
+      <div class="container bring-to-front">
+
+        <div class="section-heading text-center">
+         
+          <h2 class="section-title fw-bold">Pricing & Packages</h2>
+          <p class="lead">Simple and Transparent Pricing</p>
+        </div>
+        <div class="card shadow-lg">
+          <div class="card-body pricing-element">
+            
+            <div class="pricing-table">
+              <div class="d-md-none">
+                <div class="btn-group btn-group-toggle pricing-table-tabs mb-3" data-toggle="buttons">
+                  <input type="radio" class="btn-check" name="pricing-plan" id="rg-1" value="1">
+                  <label class="btn btn-primary" for="rg-1"> Recruit-200 </label>
+                  <input type="radio" class="btn-check" name="pricing-plan" id="rg-2" value="2" checked>
+                  <label class="btn btn-primary" for="rg-2"> Recruit-500  </label>
+                  <input type="radio" class="btn-check" name="pricing-plan" id="rg-3" value="3">
+                  <label class="btn btn-primary" for="rg-3"> Recruit-2000 </label>
+                  <input type="radio" class="btn-check" name="pricing-plan" id="rg-4" value="4">
+                  <label class="btn btn-primary" for="rg-4"> Recruit-5000 </label>
+                </div>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="expand-mobile">
+                    <tr>
+                      <th class="title text-start">
+                        <span class="hidden fw-bold">Choose Your Plan</span>
+                      </th>
+                      <th id="ph-1">
+                        <p class="h3 pricing-title fw-bold my-0">Recruit-200</p>
+                       
+                      </th>
+                      <th id="ph-2" class="visible-cell overflow-hidden position-relative">
+                        <p class="h3 pricing-title fw-bold my-0">Recruit-500</p>
+                    
+                      </th>
+                      <th id="ph-3">
+                        <p class="h3 pricing-title fw-bold my-0">Recruit-2000</p>
+                       
+                      </th>
+
+                      <th id="ph-4">
+                        <p class="h3 pricing-title fw-bold my-0">Recruit-5000</p>
+                       
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="pricing-details">
+                    <tr>
+                      <th>
+                        <span>Monthly price</span>
+                      </th>
+                      <td headers="ph-1">
+                        <div class="pricing">
+                          <span class="pricing-value">
+                            <span class="odometer price" data-monthly="0" data-yearly="0">35</span>
+                          </span>
+                        </div>
+                      </td>
+                      <td headers="ph-2" class="visible-cell">
+                        <div class="pricing">
+                          <span class="pricing-value">
+                            <span class="odometer price" data-monthly="24" data-yearly="19">75</span>
+                          </span>
+                        </div>
+                      </td>
+                      <td headers="ph-3">
+                        <div class="pricing">
+                          <span class="pricing-value">
+                            <span class="odometer price" data-monthly="99" data-yearly="79">150</span>
+                          </span>
+                        </div>
+                      </td>
+
+                      <td headers="ph-4">
+                        <div class="pricing">
+                          <span class="pricing-value">
+                            <span class="odometer price" data-monthly="99" data-yearly="79">300</span>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody class="pricing-details">
+                  
+                   
+                   
+                    
+                    <tr>
+                      <th id="pc-5">Applications/month</th>
+                      <td headers="ph-1 pc-5"> 200 </td>
+                      <td headers="ph-2 pc-5"> 500 </td>
+                      <td headers="ph-3 pc-5"> 2000 </td>
+                      <td headers="ph-4 pc-5"> 5000 </td>
+                      
+                    </tr>
+                   
+                  </tbody>
+                  <tbody class="expand-mobile">
+                    <tr>
+                     <td></td>
+                      <td headers="ph-1 ">
+                        <a href="#contact" class="btn btn-primary">Get Recruit-200</a>
+                      </td>
+                      <td headers="ph-2 " class="visible-cell">
+                        <a href="#contact" class="btn btn-primary">Get Recruit-500</a>
+                      </td>
+                      <td headers="ph-3 ">
+                        <a href="#contact" class="btn btn-primary">Get Recruit-2000</a>
+                      </td>
+                      <td headers="ph-4 ">
+                        <a href="#contact" class="btn btn-primary">Get Recruit-5000</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    
+                    <tr>
+                      
+                      <td colspan="5">
+
+                        <p class="pricing-disclaimer my-3">
+                          <span>* Facturatie vindt achteraf plaats o.b.v het verbruik van de voorgaande maand. Hierdoor betaal je altijd alleen maar voor wat je daadwerkelijk verbruikt hebt.</span>
+                        </p>
+
+                        <p class="pricing-disclaimer my-3">                        
+                          <span>** Eenmalige kosten zijn afhankelijk van het ATS, neem contact met ons op voor meer informatie.</span>
+                          <span class="fw-bold">Mocht er maatwerk nodig zijn zullen deze werkzaamheden in overleg plaats vinden.</span>
+                        </p>
+
+                        <p class="pricing-disclaimer my-3">                        
+                          <span class="fw-bold">*** Neem contact met ons op wanneer bovenstaande pakketten niet toereikend zijn</span>
+                        </p>
+
+
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- end pricing -->
+
+     <!-- start Testimonials -->
+    <!-- ./Our customers have something to say Section -->
+    <section class="section slider-testimonials">
+      <div class="container swiper-center-nav bring-to-front">
+        <div class="section-heading text-center">
+          <h2 class="section-title fw-bold">What Our Clients Say</h2>
+
+        </div>
+        <div class="card shadow-lg rounded-5">
+          <div class="row g-0 swiper-center-nav">
+            <div class="col-md-6">
+
+              <!-- Images slider, will fade -->
+              <div class="swiper h-100" data-sw-effect="fade" data-sw-space-between="0" data-sw-pagination="false" data-sw-nav-arrows=".nav-testimonial">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <figure class="m-0 image-background cover rounded-5 h-100" data-background-image="img/authors/pictures/1.jpg"> </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="m-0 image-background cover rounded-5 h-100" data-background-image="img/authors/pictures/2.jpg"> </figure>
+                  </div>
+               
+                </div>
+                <div class="divider"></div>
+              </div>
+
+              <!-- Prev button -->
+              <div class="swiper-button swiper-button-prev nav-testimonial-prev rounded-circle shadow p-2">
+                <i data-feather="arrow-left"></i>
+              </div>
+            </div>
+            <div class="col-md-6">
+
+              <!-- Testimonials slider, will slide -->
+              <div class="swiper h-100" data-sw-pagination="false" data-sw-nav-arrows=".nav-testimonial">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-body h-100 d-flex flex-column justify-content-center">
+                      <blockquote class="blockquote text-center mb-0">
+                        <figure class="mockup mb-5">
+                          <img src="img/logos/companies/1.svg" alt="..." class="img-responsive">
+                        </figure>
+                        <i class="fas fa-quote-left fa-2x op-4 absolute-md left top"></i>
+                        <p class="mb-5 mb-md-6">Recruit Connect has saved us so much time on job postings. A real game-changer!</p>
+                        <footer class="blockquote-footer">
+                          <span class="h6 text-uppercase">Arianna Rivera</span>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-body h-100 d-flex flex-column justify-content-center">
+                      <blockquote class="blockquote text-center mb-0">
+                        <figure class="mockup mb-5">
+                          <img src="img/logos/companies/2.svg" alt="..." class="img-responsive">
+                        </figure>
+                        <i class="fas fa-quote-left fa-2x op-4 absolute-md left top"></i>
+                        <p class="mb-5 mb-md-6">Thanks to Easy Apply, we receive up to 4x more applicants without extra work.</p>
+                        <footer class="blockquote-footer">
+                          <span class="h6 text-uppercase">Audrey Meyer</span>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                
+              
+                </div>
+              </div>
+
+              <!-- Next button -->
+              <div class="swiper-button swiper-button-next nav-testimonial-next rounded-circle shadow p-2">
+                <i data-feather="arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial section -->
+
+    <!-- start contact section -->
+    <section class="section" id="contact">
+      <div class="container bring-to-front">
+        <div class="row g-4 align-items-center justify-content-between">
+          <div class="col-md-6 text-center text-md-start">
+            <div class="section-heading">
+              <p class="text-primary fw-bold mb-2"> Contact Us </p>
+              <h2 class="section-title fw-bold">Start Using Recruit Connect Today!</h2>
+             
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-6" data-aos="fade-right">
+            <div class="card shadow-lg">
+              <img src="img/form.png" alt="..." class="card-img-top">
+              <div class="card-body">
+
+       
+                <form class="form pt-3 pb-3">
+
+                  <div class="row">
+
+                    <div class="col-md-6">
+<div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input type="text" name="Name" placeholder="Name" class="form-control" id="name">
+                    <div class="invalid-feedback"></div>
+                  </div>
+                    </div>
+
+                    <div class="col-md-6">
+ <div class="mb-3">
+                    <label class="form-label" for="company">Company Name</label>
+                    <input type="text" name="Company" placeholder="Company Name" class="form-control" id="company">
+                    <div class="invalid-feedback"></div>
+                  </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="text" name="Email" placeholder="email" class="form-control" id="email">
+                        <div class="invalid-feedback"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="email">Phone Number
+                        </label>
+                        <input type="text" name="Email" placeholder="Phone Number
+                        " class="form-control" id="email">
+                        <div class="invalid-feedback"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Message
+                    </label>
+                    <textarea type="text" name="Email" placeholder="Message
+                    " class="form-control" id="email"></textarea>
+                    <div class="invalid-feedback"></div>
+                  </div>
+               
+                  <div class="d-grid">
+                    <button class="btn btn-primary" type="submit"> Schedule a Demo </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- end contact section -->
+
+   
+
+
+  
+
+  
+
+
+  </main>
+
+  <!-- Page footer -->
+
+  <!-- ./Footer - Four Columns -->
+  <footer class="site-footer section bg-body-secondary">
+    <div class="container pb-3">
+      <div class="row g-4 text-center text-md-start">
+        <div class="col-md-4 me-auto">
+          <a href="./" class="link-logo">
+            <img src="img/recruit.svg" alt="" class="logo mb-4">
+          </a>
+          <p>Automate job postings and receive up to 4x more applicants with Easy Apply integrations.</p>
+        </div>
+        <div class="col-md-2">
+    
+          <nav class="nav flex-column">
+            <a class="nav-item py-2" href="about.html">Home</a>
+            <a class="nav-item py-2" href="#">Why Recruit Connect</a>
+            <a class="nav-item py-2" href="blog/">Job Boards</a>
+          </nav>
+        </div>
+        <div class="col-md-2">
+  
+          <nav class="nav flex-column">
+            <a class="nav-item py-2" href="#">ATS Systems</a>
+            <a class="nav-item py-2" href="#">How It Work</a>
+            <a class="nav-item py-2" href="#">Pricing & Packages</a>
+          </nav>
+        </div>
+     
+      </div>
+      <hr class="mt-5">
+      <div class="row small align-items-center">
+        <div class="col-md-12">
+          <p class="mt-2 mb-md-0 text-secondary text-center text-md-center">© 2025 Recruit Connect</p>
+        </div>
+      
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="btn btn-primary shadow-warning rounded-circle p-3 d-flex align-items-center justify-content-center scroll-to-top">
+    <i data-feather="chevron-up" width="18" height="18"></i>
+  </button>
+
+  <!--
+    Compiled js scripts.
+    We created and included a webpack configuration file you can compile the js.
+    Please refer to the docs in order to learn how to compile and replace this file.
+  -->
+  <script src="js/dashcore.95cbb7260081cb946756.js"></script>
+  <!-- <script src="js/loading.b6bb5062cb3673f443b3.js"></script> -->
+
+  <script>
+    document.querySelectorAll('.st-nav-mobile .text-primary, .st-nav-mobile .mobile-link').forEach(link => {
+    link.addEventListener('click', function() {
+        this.closest('.st-nav-section')?.classList.remove('st-popup-active');
+    });
+});
+
+  </script>
+</body>
+</html>

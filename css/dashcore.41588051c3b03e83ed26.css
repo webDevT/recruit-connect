@@ -97,3 +97,28 @@ font-size: 2rem;
   display: flex;
   justify-content: flex-end;
 }
+}
+.ats-item {
+    width: 11%;
+    padding: 10px 5px;
+}
+.ats-item a img {
+filter: grayscale(1);
+transition: all 0.3s;
+max-width: 80%;
+opacity: 0.5;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.ats-item a:hover img {
+filter: grayscale(0);
+transform: scale(1.1);
+opacity: 1;
+
+}
+.ats-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

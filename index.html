@@ -1,116 +1,24 @@
 <!doctype html>
 
-<!-- Include a default theme value to start with the theme of your preference, dark|light are accepted -->
 <html lang="en" data-bs-theme="light">
 
 <head>
-  <meta charset="utf-8"> <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <meta charset="utf-8">
 
   <!-- SEO -->
-  <meta name="description" content="DashCore Powerful Responsive SaaS, Startup &amp; Technology HTML Template">
-  <meta name="keywords" content="template, bootstrap, business, creative agency, services, e-commerce, shopping cart, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, touch, creative, babel, webpack">
+  <meta name="description" content="With Recruit Connect, you can seamlessly connect your ATS to job boards like Indeed and Monsterboard. Save time, increase applications, and optimize campaigns. Schedule a demo!">
+  <meta name="keywords" content="Recruit Connect ATS job boards">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="5studios">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-
-  <!-- Page loading styles. Should be included inline to avoid loading it externally -->
-  <style>
-    @keyframes spinner {
-      to {
-        transform: rotate(1turn)
-      }
-    }
-
-    .page-loading {
-      background-color: #fff;
-      bottom: 0;
-      height: 100%;
-      left: 0;
-      opacity: 0;
-      position: fixed;
-      right: 0;
-      top: 0;
-      transition: all .4s ease-in-out .2s;
-      visibility: hidden;
-      width: 100%;
-      z-index: 99999
-    }
-
-    .page-loading.active {
-      opacity: 1;
-      visibility: visible
-    }
-
-    .page-loading.active>.page-loading-inner {
-      opacity: 1
-    }
-
-    .page-loading-inner {
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: opacity .2s ease-in-out;
-      width: 100%
-    }
-
-    .page-loading-inner>span {
-      color: #9397ad;
-      display: block;
-      font-size: 1rem;
-      font-weight: 400
-    }
-
-    .page-spinner {
-      animation: spinner .75s linear infinite;
-      border: .15em solid #b4b7c9;
-      border-radius: 50%;
-      border-right-color: transparent;
-      display: inline-block;
-      height: 2.75rem;
-      margin-bottom: .75rem;
-      vertical-align: text-bottom;
-      width: 2.75rem
-    }
-
-    [data-bs-theme=dark] .page-loading {
-      background-color: #0b0f19
-    }
-
-    [data-bs-theme=dark] .page-loading-inner>span {
-      color: #fff;
-      opacity: .6
-    }
-
-    [data-bs-theme=dark] .page-spinner {
-      border-color: hsla(0, 0%, 100%, .4) transparent hsla(0, 0%, 100%, .4) hsla(0, 0%, 100%, .4)
-    }
-  </style>
   <link rel="icon" href="favicon.ico">
-  <title>DashCore - Powerful Responsive SaaS, Startup &amp; Technology HTML Template</title>
-
-  <!--
-    Compiled css styles.
-    We created and included a webpack configuration file you can compile the css.
-    Please refer to the docs in order to learn how to compile and replace this file.
-  -->
+  <title>Recruit Connect – ATS Integration With Job Boards | Automate Your Job Posting</title>
   <link rel="stylesheet" href="css/dashcore.41588051c3b03e83ed26.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body> <!--[if lt IE 8]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <!-- Page loading -->
-  <!-- <div class="page-loading active">
-    <div class="page-loading-inner">
-      <div class="page-spinner"></div>
-      <span>Loading...</span>
-    </div>
-  </div> -->
+<body> 
 
   <!-- Page Navbar -->
   <nav class="st-nav navbar navbar-expand-lg fixed-top" id="main-nav">
@@ -147,9 +55,9 @@
        <!-- Mobile navigation modal -->
        <li class="st-nav-section st-nav-mobile nav-item">
         <button class="st-root-link navbar-toggler" type="button">
-          <span class="icon-bar" style="background-color: #fff;"></span>
-          <span class="icon-bar" style="background-color: #fff;"></span>
-          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <div class="st-popup">
           <div class="st-popup-container bg-body-tertiary">
@@ -192,371 +100,18 @@
 
       </ul>
     </div>
-    <div class="st-dropdown-root">
-      <div class="st-dropdown-bg">
-        <div class="st-alt-bg"></div>
-      </div>
-      <div class="st-dropdown-arrow"></div>
-      <div class="st-dropdown-container">
-        <div class="st-dropdown-section" data-dropdown="pages">
-          <div class="st-dropdown-content">
-            <div class="st-dropdown-content-group">
-              <div class="mb-4">
-                <h4 class="text-nowrap mb-0 text-gradient text-gradient-success">
-                  <span class="fw-bold">Useful pages</span> you'll need
-                </h4>
-                <p class="text-muted mt-0">Get a complete design stack</p>
-              </div>
-              <div class="row flex-nowrap g-4">
-                <div class="col me-4">
-                  <h6 class="text-uppercase fw-bold small ps-2">Error</h6>
-                  <a class="dropdown-item" href="403.html">403 Error</a>
-                  <a class="dropdown-item" href="404.html">404 Error</a>
-                  <a class="dropdown-item" href="500.html">500 Error</a>
-                </div>
-                <div class="col me-4">
-                  <h6 class="text-uppercase fw-bold small ps-2">User</h6>
-                  <a class="dropdown-item" href="auth/login.html">Login</a>
-                  <a class="dropdown-item" href="auth/register.html">Register</a>
-                  <a class="dropdown-item" href="auth/forgot-password.html">Forgot</a>
-                </div>
-                <div class="col me-4">
-                  <h6 class="text-uppercase fw-bold small ps-2">Extra</h6>
-                  <a class="dropdown-item" href="pricing.html">Pricing</a>
-                  <a class="dropdown-item" href="terms.html">Terms</a>
-                  <a class="dropdown-item" href="faqs.html">FAQ</a>
-                </div>
-              </div>
-            </div>
-            <div class="st-dropdown-content-group">
-              <div class="row">
-                <div class="col-md-6">
-                  <a class="dropdown-item fw-bold" href="about.html">
-                    <i class="far fa-building icon"></i> About
-                  </a>
-                  <a class="dropdown-item fw-bold" href="contact.html">
-                    <i class="far fa-envelope icon"></i> Contact
-                  </a>
-                </div>
-                <div class="col-md-6">
-                  <a class="dropdown-item fw-bold" href="pricing.html">
-                    <i class="fa fa-money-bills icon"></i> Pricing
-                  </a>
-                  <a class="dropdown-item fw-bold" href="pricing-table.html">
-                    <i class="fas fa-hand-holding-usd icon"></i> Pricing Table
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="st-dropdown-section" data-dropdown="blocks">
-          <div class="st-dropdown-content">
-            <div class="st-dropdown-content-group">
-              <div class="row flex-nowrap flex-nowrap g-4">
-                <div class="col me-4">
-                  <a class="dropdown-item" href="blocks/call-to-action.html">Call to actions</a>
-                  <a class="dropdown-item" href="blocks/contact.html">Contact</a>
-                  <a class="dropdown-item" href="blocks/counter.html">Counters</a>
-                  <a class="dropdown-item" href="blocks/faqs.html">FAQs</a>
-                </div>
-                <div class="col me-4">
-                  <a class="dropdown-item" href="blocks/footer.html">Footers</a>
-                  <a class="dropdown-item" href="blocks/form.html">Forms</a>
-                  <a class="dropdown-item" href="blocks/navbar.html">Navbar</a>
-                  <a class="dropdown-item" href="blocks/navigation.html">Navigation</a>
-                </div>
-                <div class="col">
-                  <a class="dropdown-item" href="blocks/pricing.html">Pricing</a>
-                  <a class="dropdown-item" href="blocks/slider.html">Sliders</a>
-                  <a class="dropdown-item" href="blocks/team.html">Team</a>
-                  <a class="dropdown-item" href="blocks/testimonial.html">Testimonials</a>
-                </div>
-              </div>
-            </div>
-            <div class="st-dropdown-content-group">
-              <h6 class="link-title text-uppercase">
-                <i class="fas fa-long-arrow-right me-3"></i> Coming soon
-              </h6>
-              <div class="ms-5">
-                <span class="dropdown-item text-muted">Dividers</span>
-                <span class="dropdown-item text-muted">Gallery</span>
-                <span class="dropdown-item text-muted">Screenshots</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="st-dropdown-section" data-dropdown="components">
-          <div class="st-dropdown-content">
-            <div class="st-dropdown-content-group">
-              <a class="dropdown-item mb-4" href="components/accordion.html">
-                <div class="d-flex flex-row align-items-center">
-                  <div class="bg-warning-subtle text-warning p-3 rounded-2 me-lg-3 me-md-auto">
-                    <i data-feather="align-justify" width="24" height="24" class="stroke-warning"></i>
-                  </div>
-                  <div>
-                    <h5 class="link-title m-0">Accordion</h5>
-                    <p class="m-0 text-muted">Useful accordion elements</p>
-                  </div>
-                </div>
-              </a>
-              <a class="dropdown-item mb-4" href="components/color.html">
-                <div class="d-flex flex-row align-items-center">
-                  <div class="bg-primary-subtle text-primary p-3 rounded-2 me-lg-3 me-md-auto">
-                    <i data-feather="image" width="24" height="24" class="stroke-primary"></i>
-                  </div>
-                  <div>
-                    <h5 class="link-title m-0">Colors</h5>
-                    <p class="m-0 text-muted">Get to know DashCore color options</p>
-                  </div>
-                </div>
-              </a>
-              <h6 class="text-uppercase fw-bold small">Huge components list</h6>
-              <div class="row flex-nowrap">
-                <div class="col">
-                  <a class="dropdown-item" href="components/alert.html">Alerts</a>
-                  <a class="dropdown-item" href="components/badge.html">Badges</a>
-                  <a class="dropdown-item" href="components/button.html">Buttons</a>
-                </div>
-                <div class="col">
-                  <a class="dropdown-item" href="components/overlay.html">Overlay</a>
-                  <a class="dropdown-item" href="components/progress.html">Progress</a>
-                  <a class="dropdown-item" href="components/lightbox.html">Lightbox</a>
-                </div>
-                <div class="col">
-                  <a class="dropdown-item" href="components/tab.html">Tabs</a>
-                  <a class="dropdown-item" href="components/tables.html">Tables</a>
-                  <a class="dropdown-item" href="components/typography.html">Typography</a>
-                </div>
-              </div>
-            </div>
-            <div class="st-dropdown-content-group">
-              <span class="dropdown-item d-flex align-items-center text-muted"> Wizard <i class="fas fa-ban ms-auto"></i>
-              </span>
-              <span class="dropdown-item d-flex align-items-center text-muted"> Timeline <i class="fas fa-ban ms-auto"></i>
-              </span>
-              <span class="dropdown-item d-flex align-items-center text-muted"> Process <i class="fas fa-ban ms-auto"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="st-dropdown-section" data-dropdown="landings">
-          <div class="st-dropdown-content">
-            <div class="st-dropdown-content-group">
-              <div class="content" style="max-width:720px">
-                <div class="row">
-                  <div class="col-md-4 d-flex flex-column">
-                    <h4 class="fw-bold text-gradient text-gradient-success m-0">Beautiful <span class="d-block">Landing Pages</span>
-                    </h4>
-                    <p class="m-0 text-muted">Carefully designed Landing Pages</p>
-                    <div class="position-relative mt-auto d-flex justify-content-end">
-                      <div class="swiper-button sw-nav sw-nav-prev rounded-circle shadow p-2 me-3">
-                        <i data-feather="arrow-left"></i>
-                      </div>
-                      <div class="swiper-button sw-nav sw-nav-next rounded-circle shadow p-2">
-                        <i data-feather="arrow-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="swiper" data-sw-loop="true" data-sw-nav-arrows=".sw-nav" data-sw-allow-move="false">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <a href="app-landing.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/01-app-landing.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="app-landing-2.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/02-app-landing-2.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="business.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/03-business.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="corporate.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/04-corporate.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="developers.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/05-developers.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="integration.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/06-integration.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="marketing.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/07-marketing.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="online-payments.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/08-online-payments.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="payment-services.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/09-payment-services.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="saas.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/10-saas.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="smart-business.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/11-smart-business.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="swiper-slide">
-                          <a href="startup.html">
-                            <div class="card shadow border-0 overflow-hidden">
-                              <figure class="preview-overlay m-0">
-                                <div class="preview-pane">
-                                  <div class="preview-page" data-simplebar="">
-                                    <img class="card-img-bottom img-responsive" src="img/demo/screen/12-startup.png" alt="">
-                                  </div>
-                                </div>
-                              </figure>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="st-dropdown-content-group">
-              <div class="row">
-                <div class="col-md-4">
-                  <p class="text-uppercase ps-2 fw-bold text-gradient text-gradient-primary">Blog Pages</p>
-                  <a class="dropdown-item fw-bold" href="blog/list-view.html">
-                    <i class="fa fa-list me-2"></i> List View
-                  </a>
-                  <a class="dropdown-item fw-bold" href="blog/">
-                    <i class="fa fa-table-cells me-2"></i> Grid View
-                  </a>
-                  <a class="dropdown-item fw-bold" href="blog/grid-view-2.html">
-                    <i class="fa fa-table-cells-large me-2"></i> Grid View 2
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <p class="text-uppercase ps-2 fw-bold text-gradient text-gradient-primary">With Sidebar</p>
-                  <a class="dropdown-item fw-bold" href="blog/list-sidebar.html"> List View with Sidebar </a>
-                  <a class="dropdown-item fw-bold" href="blog/grid-sidebar.html"> Grid View with Sidebar </a>
-                  <a class="dropdown-item fw-bold" href="blog/post-sidebar.html"> Single Post with Sidebar </a>
-                </div>
-                <div class="col-md-4">
-                  <p class="text-uppercase ps-2 fw-bold text-gradient text-gradient-primary">Other Pages</p>
-                  <a class="dropdown-item fw-bold" href="blog/post.html"> Single Post </a>
-                  <a class="dropdown-item fw-bold" href="blog/category.html"> Categories </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+    <!-- start -->
+    <div class="st-dropdown-root"> 
+      <div class="st-dropdown-container">     
       </div>
     </div>
+     <!-- end -->
+    
   </nav>
 
-  <!-- Main content, everything should be placed inside this main tag but the nav and footer -->
+
   <main class="position-relative overflow-hidden overflow-hidden">
 
     <!-- ./Page Heading -->
@@ -627,7 +182,7 @@
       </div>
     </header>
 
-    <!-- ./Logos Section -->
+    <!-- start Logos Section -->
     <section class="section logos-section">
       <div class="container position-relative pt-0 pb-5 border-bottom">
         <div class="swiper" data-sw-show-items="5" data-sw-space-between="30" data-sw-autoplay="2500" data-sw-loop="true">
@@ -667,8 +222,9 @@
         </div>
       </div>
     </section>
+     <!-- end Logos Section -->
 
-    <!-- ./Ton of benefits Section -->
+    <!--start why us Section -->
     <section class="section" id="why-us">
       <div class="container bring-to-front">
         <div class="row g-4 align-items-center">
@@ -755,15 +311,12 @@
         </div>
     </div>
 </div>
-
-
-
         </div>
       </div>
     </section>
+     <!--end why us Section -->
 
-    <!-- ./Path to Success Section -->
-   <!-- Path to Success Section -->
+   <!-- start How it Works Section -->
 <section class="section shape-ring-big" id="how-it-works">
   <div class="shapes-container">
     <div class="shape-ring position-absolute end-0" data-aos="fade-up"></div>
@@ -834,9 +387,10 @@
     </div>
   </div>
 </section>
+   <!-- end How it Works Section -->
 
 
-    <!-- ./You&#39;re in a secure company Section -->
+    <!-- start job boards Section -->
     <section class="section safety-first" id="job-board">
       <div class="shapes-container">
         <div class="shape shape-circle">
@@ -943,10 +497,7 @@
                     <img src="img/jb/stepstone.svg" alt="" class="jb-logo">
                   </div>
                 </a>
-              </div>
-        
-           
-        
+              </div>          
               <div class="col-md-4">
                 <div class="card shadow-box hover-lift border-0">
                   <div class="card-body text-center">
@@ -960,8 +511,9 @@
         </div>
       </div>
     </section>
+     <!-- end job boards Section -->
 
-    <!-- ./Curve Divider -->
+    <!-- start ats systems section-->
     <div class="position-relative" id="ats-systems">
       <div class="shape-divider shape-divider-bottom shape-divider-curve shape-divider-fluid-x text-primary">
         <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg" style="fill:#f1f4f8;">
@@ -969,8 +521,7 @@
         </svg>
       </div>
     </div>
-
-    <!-- ./Millions business rely on DashCore Section -->
+>
     <section class="section" style="background-color: #f1f4f8;">
       <div class="container pb-9">
         <div class="section-heading text-center">
@@ -1082,15 +633,10 @@
                 <img src="img/ats/yellowyard.jpg" alt="">
               </a>
             </div>
-
-          
-
-
-
         </div>
-
       </div>
     </section>
+    <!-- end ats systems section-->
 
     <!-- ./Curve Divider -->
     <div class="position-relative ">
@@ -1101,7 +647,7 @@
       </div>
     </div>
 
-    <!-- Features -->
+    <!-- start pricing section -->
     <section class="section mt-n6" id="pricing">
       <div class="container pt-0">
         <div class="card shadow border-0 rounded-5">
@@ -1248,10 +794,9 @@
         </div>
       </div>
     </section>
+    <!-- end pricing section -->
 
-
-    <!-- See why people love DashCore -->
-     <!-- ./Testimonials -->
+     <!-- start Testimonials section -->
      <section class="section block singl-testimonial">
       <div class="container">
         <div class="swiper pb-0 pb-lg-8" data-sw-nav-arrows=".reviews-nav">
@@ -1302,9 +847,7 @@
                 </div>
               </div>
             </div>
-          
-          
-           
+                       
           </div>
 
           <!-- Add Arrows -->
@@ -1319,7 +862,11 @@
         </div>
       </div>
     </section>
-    <!-- ./FAQs Section -->
+    <!-- end Testimonials section -->
+
+
+
+    <!-- start contact section -->
     <section class="section bg-body-secondary" id="contact">
       <div class="container pb-10">
         <div class="row g-4 align-items-center">
@@ -1386,6 +933,7 @@
         </div>
       </div>
     </section>
+    <!-- end contact section -->
     
 
     <!-- ./Curve Divider -->
@@ -1397,7 +945,7 @@
       </div>
     </div>
 
-    <!-- ./Download -->
+    <!--start cta section -->
     <section class="section app-download mt-n10">
       <div class="container bring-to-front">
         <div class="shadow-lg bg-primary p-5 rounded-5">
@@ -1417,10 +965,11 @@
         </div>
       </div>
     </section>
+     <!--end cta section -->
     
     
 
-    <!-- ./CTA - Buy it now Section -->
+    <!--start cta section -->
     <section class="section">
       <div class="container pt-5">
         <div class="d-flex align-items-center flex-column flex-md-row">
@@ -1432,11 +981,11 @@
         </div>
       </div>
     </section>
+     <!--end cta section -->
     
   </main>
 
-  <!-- Page footer -->
-
+  <!-- start footer -->
   <!-- ./Curve Divider -->
   <div class="position-relative ">
     <div class="shape-divider shape-divider-bottom shape-divider-curve shape-divider-fluid-x text-black">
@@ -1458,26 +1007,22 @@
   
     </div>
   </footer>
+    <!-- end footer -->
 
-  <!-- Back to top -->
+  <!-- start Back to top -->
   <button class="btn btn-primary p-3 d-flex align-items-center justify-content-center scroll-to-top">
     <i data-feather="chevron-up" width="18" height="18"></i>
   </button>
+   <!-- end Back to top -->
 
-  <!--
-    Compiled js scripts.
-    We created and included a webpack configuration file you can compile the js.
-    Please refer to the docs in order to learn how to compile and replace this file.
-  -->
+
   <script src="js/dashcore.95cbb7260081cb946756.js"></script>
- 
   <script>
     document.querySelectorAll('.st-nav-mobile .text-primary, .st-nav-mobile .mobile-link').forEach(link => {
     link.addEventListener('click', function() {
         this.closest('.st-nav-section')?.classList.remove('st-popup-active');
     });
 });
-
   </script>
 
   <script>

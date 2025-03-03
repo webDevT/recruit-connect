@@ -1,0 +1,98 @@
+.hiw {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #009fe3;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+   }
+   .btn {
+       border-radius: 50px;
+   }
+   .jb-logo {
+       height: 30px;
+       margin-bottom: 20px;
+       max-width: 100%;
+   }
+   .nav-link {
+       cursor: pointer;
+   }
+         .logos-section .swiper-slide img {
+                   display: block;
+                   margin-left: auto;
+                   margin-right: auto;
+                 }
+   
+   .ats-item {
+       width: 11%;
+       padding: 10px 5px;
+   }
+   .ats-item a img {
+   filter: grayscale(1);
+   transition: all 0.3s;
+   max-width: 80%;
+   opacity: 0.5;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   }
+   .ats-item a:hover img {
+   filter: grayscale(0);
+   transform: scale(1.1);
+   opacity: 1;
+   
+   }
+   .ats-list {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+   }
+   
+   .st-nav .st-nav-menu {
+       flex-wrap: nowrap;
+   }
+    @media (max-width: 1200px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+       padding-left: 0.6rem !important;
+       padding-right: 0.6rem !important;
+   }
+   }
+   @media (max-width: 992px) {
+       .icon-bar {
+           background-color: #fff !important; 
+       }
+       .navbar-sticky .icon-bar {
+           background-color: #009fe3 !important;
+       }
+   }
+   
+   @media (max-width: 768px) {
+   .pricing .pricing-value {
+       font-size: 2rem;
+   }
+       .btn-check:checked + label {
+       opacity: 0.8;
+   }
+       .pricing-element .pricing-table-tabs label {
+       white-space: pre-wrap;
+   }
+   h2.cta-title {
+   font-size: 2rem;
+   }
+   .st-nav .st-nav-section.st-nav-mobile{
+     width: 65%;
+     display: block;
+     position: absolute;
+     z-index: 999;
+     display: flex;
+     justify-content: flex-end;
+   }
+   }
+   
